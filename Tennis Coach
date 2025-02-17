@@ -1,0 +1,12 @@
+# Hypothetical scores of tennis players
+player_scores <- c(32, 45, 47, 50, 50, 51, 52, 53, 55, 57, 58, 60, 61, 63, 80)
+
+# Create a boxplot to visualize the distribution of player scores
+boxplot(player_scores,
+        main = "",
+        ylab = "Scores",
+        col = "lightgreen",
+        border = "darkgreen")
+
+# Add a title and interpretation
+title(main = "Boxplot: Tennis Player Scores with Outliers", col.main = "blue")
