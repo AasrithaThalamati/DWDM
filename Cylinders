@@ -1,0 +1,10 @@
+# Load the mtcars dataset
+data(mtcars)
+
+# Create a boxplot to visualize the relation between mpg and cyl
+boxplot(mpg ~ cyl, data = mtcars,
+        xlab = "Number of Cylinders",
+        ylab = "Miles Per Gallon (mpg)",
+        main = "Boxplot of MPG by Number of Cylinders",
+        col = "lightblue", 
+        border = "black")
