@@ -1,0 +1,15 @@
+# Load the mtcars dataset
+data(mtcars)
+
+# Plot the first line (mpg) vs. the row numbers of mtcars
+plot(mtcars$mpg, type = "l", col = "blue", 
+     xlab = "Car Index", ylab = "Value", 
+     main = "Line Chart for mpg and qsec", 
+     ylim = range(c(mtcars$mpg, mtcars$qsec))) # Setting y-axis range to fit both variables
+
+# Add the second line (qsec) to the plot
+lines(mtcars$qsec, col = "red")
+
+# Add a legend
+legend("topright", legend = c("mpg", "qsec"), 
+       col = c("blue", "red"), lty = 1)
